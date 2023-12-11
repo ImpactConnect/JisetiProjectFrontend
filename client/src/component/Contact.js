@@ -8,7 +8,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 
 function Contact() {
   return (
-    <footer className="footer_container">
+    <footer className="footer_container" id="contact">
       <h3>Contact Us:</h3>
       <div className="footer_icons_container">
         <ul>
