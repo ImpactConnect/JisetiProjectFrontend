@@ -12,6 +12,37 @@ code {
     monospace;
 }
 
+/* About.css */
+
+/* Home.css */
+
+
+/* NavBar.css */
 .navbar_nav{
   background-color: rgb(223, 228, 228);
+}
+
+.navbar_ul ul li{
+  text-decoration: none;
+  color: yellow;
+  list-style-type: none;
+}
+
+.navbar_links li{
+  margin: 10px;
+}
+
+.navbar_links{
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+/* Contact.css */
+.footer_icon li{
+  list-style-type: none;
+  display: inline;
+  
+}
+.footer_icon li a{
+  color: black;
 }

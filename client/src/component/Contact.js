@@ -11,11 +11,11 @@ function Contact() {
     <footer className="footer_container" id="contact">
       <h3>Contact Us:</h3>
       <div className="footer_icons_container">
-        <ul>
-          <li> <FaFacebook /> </li>
-          <li> <BsTwitterX /> </li>
-          <li> <FcGoogle /> </li>
-          <li> <IoLogoInstagram /> </li>
+        <ul className="footer_icon">
+          <li><a href="#"><FaFacebook /></a></li>
+          <li><a href="#"><BsTwitterX /></a></li>
+          <li><a href="#"><FcGoogle /></a></li>
+          <li><a href="#"><IoLogoInstagram /></a></li>
         </ul>
       </div>
       <div className="footer_text_container">
