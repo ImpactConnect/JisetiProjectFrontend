@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 
 code {
@@ -12,6 +13,57 @@ code {
     monospace;
 }
 
+/* About.css */
+
+/* Home.css */
+.home{
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg) ;
+}
+
+
+
+
+/* NavBar.css */
 .navbar_nav{
-  background-color: rgb(223, 228, 228);
+  background-color: #D3CBCB;
+  
+}
+
+.navbar_ul ul li{
+  text-decoration: none;
+  color: yellow;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.navbar_ul ul li .home_home, .about_about, .contact_contact, .login_login, .register_register{
+  text-decoration: none;
+  
+  list-style-type: none;
+ 
+}
+
+.navbar_links li{
+  margin: 10px;
+}
+
+.navbar_links{
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.logo_image{
+  width: 100px;
+  height: 100px;
+  
+}
+
+/* Contact.css */
+.footer_icon li{
+  list-style-type: none;
+  display: inline;
+  
+}
+.footer_icon li a{
+  color: black;
 }
