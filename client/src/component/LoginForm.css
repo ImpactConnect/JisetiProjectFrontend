@@ -13,7 +13,7 @@
     height: 50vh;
     border-radius: 20px;
     box-shadow: 5px 5px;
-    padding-top: -20px;
+    
   }
   
 .login_container .login{
@@ -25,7 +25,6 @@
     margin: -60px 0;
     margin-left: -90px;
     width: 98%;
-    height: 50vh;
     padding: 90px;
   }
 
@@ -46,8 +45,8 @@
     display: flex;
     justify-content: space-around;
     font-size: 14.5px;
-    margin: -180px 0 55px;
     color: #6C4B4B;
+    
 }
 
 .remember_forgot label input{
@@ -75,11 +74,10 @@
     border-color: #FDF7F7;
     box-shadow: 0px;
     outline: none;
-}
-
-.login_container .submit{
+    margin: 10px;
     text-transform: uppercase;
 }
+
 
 .login_container .register_link{
     color: #6C4B4B;
@@ -90,3 +88,4 @@
     margin: 10px;
     text-decoration: none;
 }
+

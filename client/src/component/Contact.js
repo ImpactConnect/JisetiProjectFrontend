@@ -19,8 +19,6 @@ function Contact() {
             <li><a href="#"><FcGoogle /></a></li>
             <li><a href="#"><IoLogoInstagram /></a></li>
           </ul>
-        </div>
-        <div className="footer_text_container">
           <p className="footer_text">
             Copyright &copy; 2017 All Rights Reserved by <a href="#h">JISETI</a>.
           </p>

@@ -8,8 +8,8 @@ function NavBar() {
   return (
     <div className="navbar_container">
       <nav className="navbar_nav">
-        <img src={logo}alt="pic" className="logo_image"/>
-        <span className="navbar_ul">
+        <div className="logo_image"> <img src={logo}alt="pic" /> </div>
+        <div className="navbar_ul">
           <ul className="navbar_links">
             {/* <li><Link to="home" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
             <li><Link to="about" spy={true} smooth={true} offset={50} duration={500} >About</Link></li>
@@ -22,7 +22,7 @@ function NavBar() {
             <li><NavLink className="login_login" exact to="/login">Login</NavLink></li>
             <li><NavLink className="register_register" exact to="/register">Register</NavLink> </li>
           </ul>
-        </span>
+        </div>
       </nav>      
     </div>
   )

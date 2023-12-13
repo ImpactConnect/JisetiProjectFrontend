@@ -1,0 +1,47 @@
+.reg_input_box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+    width: 300px;
+    
+}
+
+.register_form{
+    background-color: #D9D9D9;
+    width: 420px;
+    height: 67vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
+    
+  }
+
+  .register_container .input{
+    padding: 100px; 
+   
+  }
+
+.register_container .register{
+    color: #957979;
+    font-size: 25px;
+    
+}
+
+.register_container button{
+    width: 250px;
+    height: 30px;
+    background-color: #FDF7F7;
+    color: #D61212;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #FDF7F7;
+    box-shadow: 0px;
+    outline: none;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.input_box .name_input{
+    padding: 8px;
+}
