@@ -32,6 +32,8 @@ function App() {
     {/* <Home />
          <About />
          <Contact/> */}
+   
+      
         <NavBar />
         <Routes>
           <Route path="/" element ={<Home/>} />

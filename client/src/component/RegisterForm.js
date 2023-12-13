@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './styles/RegisterForm.css'
+import './styles//RegisterForm.css'
 import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator'
 import { Link, useNavigate } from "react-router-dom"
 import Button from '@mui/material/Button'
@@ -41,16 +41,15 @@ function RegisterForm({ handleFormSubmit }) {
             <TextValidator type="text" onChange={inputChangeHandler} name="password" className="name_input" label="Create Password" validators={["required"]}></TextValidator>
             <TextValidator type="password" onChange={inputChangeHandler} name="confirmPassword" className="name_input" label="Confirm Password" validators={["required"]} ></TextValidator>
             <TextValidator type="number" onChange={inputChangeHandler} name="phone" className="name_input" label="Enter Phone Number" validators={["required"]} ></TextValidator>
-            
+            <div className="agreement">
+              <label htmlFor=""><input type="checkbox"/>I agree to the terms & conditions</label>
+            </div>
+            <Button type="submit" className="reg_submit" onClick={formSubmitHandler}>Register</Button>
           </ValidatorForm>
         
-        <div className="agreement">
-          <label htmlFor=""><input type="checkbox" required/>I agree to the terms & conditions</label>
-        </div> 
-          <Button type="submit" className="reg_submit" onClick={formSubmitHandler}>Register</Button>
+        
         <div className="register_link">
           <p>Already have an account? <Link to="/login">Login</Link></p>
-         
         </div>
         </div>
       </center>
