@@ -13,7 +13,15 @@ import RegisterForm from "./component/RegisterForm"
 function App() {
 
   function handleFormSubmit (user) {
-    fetch('https//:blablabla')
+    console.log(user)
+    fetch('https//:blablabla', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify(user)
+    })
     .then(res => res.json())
     .then(data => data)
   }
