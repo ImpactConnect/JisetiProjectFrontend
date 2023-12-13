@@ -4,7 +4,7 @@ import { BsTwitterX } from "react-icons/bs"
 import { FcGoogle } from "react-icons/fc"
 import { IoLogoInstagram } from "react-icons/io5"
 import logo from "./images/logo.png"
-import "./Footer.css"
+import './styles/Footer.css'
 
 function Footer() {
   return (

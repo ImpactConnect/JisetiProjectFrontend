@@ -1,7 +1,8 @@
 import React from 'react'
-import './LoginForm.css'
+import './styles/LoginForm.css'
 import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator'
 import { Link } from "react-router-dom"
+import Button from '@mui/material/Button'
 
 function LoginForm() {
   return (
@@ -18,7 +19,7 @@ function LoginForm() {
           <label htmlFor=""><input type="checkbox"/>Remember me?</label>
           <a href="#f">Forgot Password?</a>
         </div>
-        <button type="submit" className="submit">Login</button>
+        <Button type="submit" className="submit">Login</Button>
         <div className="register_link">
           <p>Don't have an account? <Link to="/register">Register</Link></p>
         </div>

@@ -1,10 +1,11 @@
 import React from 'react'
-import './Home.css'
+import './styles/Home.css'
+import CardPosts from "./CardPosts"
 // import About from "./About";
 // import Contact from "./Contact";
 
 
-function Home({posts}) {
+function Home() {
 
   
 
@@ -19,9 +20,7 @@ function Home({posts}) {
           </p>
         </div>
       </div>
-      
-       
-      
+    <CardPosts />     
       
     </div>
   )

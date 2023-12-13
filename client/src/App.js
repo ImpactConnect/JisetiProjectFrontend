@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import './App.css'
 import Contact from "./component/Contact"
 import Home from "./component/Home"
@@ -32,7 +32,8 @@ function App() {
     {/* <Home />
          <About />
          <Contact/> */}
-      <Router>
+   
+      
         <NavBar />
         <Routes>
           <Route path="/" element ={<Home/>} />
@@ -43,7 +44,8 @@ function App() {
           <Route path="/register" element ={<RegisterForm handleFormSubmit={handleFormSubmit}/>} />
         </Routes>
         <Footer />
-      </Router>
+     
+   
     </div>
   );
 }
