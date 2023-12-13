@@ -12,6 +12,21 @@ import Footer from "./component/Footer";
 
 
 function App() {
+
+  function handleFormSubmit (user) {
+    console.log(user)
+    fetch('https//:blablabla', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify(user)
+    })
+    .then(res => res.json())
+    .then(data => data)
+  }
+
   return (
     <div className="App">
     {/* <Home />
@@ -25,7 +40,7 @@ function App() {
           <Route path="/contact" element ={<Contact/>} />
           <Route path="/post" element ={<Post/>} />
           <Route path="/login" element ={<LoginForm/>} />
-          <Route path="/register" element ={<RegisterForm/>} />
+          <Route path="/register" element ={<RegisterForm handleFormSubmit={handleFormSubmit}/>} />
         </Routes>
         <Footer />
       </Router>
