@@ -16,7 +16,7 @@ function LoginForm() {
         
         <div className="remember_forgot">
           <label htmlFor=""><input type="checkbox"/>Remember me?</label>
-          <a href="#">Forgot Password?</a>
+          <a href="#f">Forgot Password?</a>
         </div>
         <button type="submit" className="submit">Login</button>
         <div className="register_link">

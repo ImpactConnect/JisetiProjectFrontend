@@ -1,30 +1,17 @@
 import React from 'react'
-import './Contact.css'
-import { FaFacebook } from "react-icons/fa"
-import { BsTwitterX } from "react-icons/bs"
-import { FcGoogle } from "react-icons/fc"
-import { IoLogoInstagram } from "react-icons/io5"
+
+
 
 
 
 function Contact() {
   return (
-    <footer className="footer_container" id="contact">
-      <h3>Contact Us:</h3>
-      <center>
-        <div className="footer_icons_container">
-          <ul className="footer_icon">
-            <li><a href="#"><FaFacebook /></a></li>
-            <li><a href="#"><BsTwitterX /></a></li>
-            <li><a href="#"><FcGoogle /></a></li>
-            <li><a href="#"><IoLogoInstagram /></a></li>
-          </ul>
-          <p className="footer_text">
-            Copyright &copy; 2017 All Rights Reserved by <a href="#h">JISETI</a>.
-          </p>
-        </div>
-      </center>
-    </footer>
+    <div className="contact">
+      <div className="contact_container">
+        <h2>Send us an email at <a href='mailto:yourmail@domain.com'>JISETI</a> and we will get back to you</h2>
+        
+      </div>
+    </div>
   )
 }
 

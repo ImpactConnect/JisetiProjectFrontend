@@ -22,7 +22,7 @@
   width: 90%;
 }
   
-.navbar_ul ul li .home_home, .about_about, .contact_contact, .login_login, .register_register{
+.navbar_ul ul li .home_home, .about_about, .contact_contact,.post_post, .login_login, .register_register{
   text-decoration: none;
   list-style-type: none;
 }
