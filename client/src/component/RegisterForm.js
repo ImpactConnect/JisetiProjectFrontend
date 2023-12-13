@@ -25,7 +25,6 @@ function RegisterForm({ handleFormSubmit }) {
 
   function formSubmitHandler (e) {
     e.preventDefault()
-    navigate('/login')
     handleFormSubmit(newUser)
   }
 
