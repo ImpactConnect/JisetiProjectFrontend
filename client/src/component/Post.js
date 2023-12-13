@@ -1,8 +1,16 @@
 import React from 'react'
 
+
 function Post() {
+
+
+
+
   return (
-    <div>PostPostPPPPPPPPPPPPPPPPPPPPPPSKIJCKZLBHIC</div>
+    <div className="post" >
+       <h1>Posttttttt</h1>
+       
+    </div>
   )
 }
 

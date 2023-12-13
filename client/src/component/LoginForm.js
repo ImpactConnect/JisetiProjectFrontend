@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 import './LoginForm.css'
 import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator'
 import { Link } from "react-router-dom"
 import { Button } from 'react-scroll'
+=======
+import React from 'react'
+import './styles/LoginForm.css'
+import { ValidatorForm, TextValidator} from 'react-material-ui-form-validator'
+import { Link } from "react-router-dom"
+import Button from '@mui/material/Button'
+>>>>>>> eef23fd78da713e00adf0411a2dd8afd76005424
 
 function LoginForm() {
 
@@ -37,8 +45,12 @@ function LoginForm() {
         
         <div className="remember_forgot">
           <label htmlFor=""><input type="checkbox"/>Remember me?</label>
-          <a href="#">Forgot Password?</a>
+          <a href="#f">Forgot Password?</a>
         </div>
+<<<<<<< HEAD
+=======
+        <Button type="submit" className="submit">Login</Button>
+>>>>>>> eef23fd78da713e00adf0411a2dd8afd76005424
         <div className="register_link">
           <p>Don't have an account? <Link to="/register">Register</Link></p>
         </div>

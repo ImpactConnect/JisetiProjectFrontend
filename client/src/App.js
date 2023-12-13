@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import './App.css'
 import Contact from "./component/Contact"
 import Home from "./component/Home"
@@ -12,6 +12,8 @@ import RegisterForm from "./component/RegisterForm"
 
 function App() {
 
+  const navigate = useNavigate()
+
   function handleFormSubmit (user) {
     console.log(user)
     fetch('https//:blablabla', {
@@ -23,8 +25,9 @@ function App() {
       body: JSON.stringify(user)
     })
     .then(res => res.json())
-    .then(data => data)
+    .then(data => navigate('/login'))
   }
+
 
   return (
     <div className="App">

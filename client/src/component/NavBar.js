@@ -1,6 +1,6 @@
 import React from 'react'
-import './NavBar.css'
-import {Link} from "react-scroll"
+import './styles/NavBar.css'
+// import {Link} from "react-scroll"
 import { NavLink } from "react-router-dom"
 import logo from "./images/logo.png"
 
@@ -17,8 +17,8 @@ function NavBar() {
             
             <li><NavLink className="home_home" exact to="/">Home</NavLink></li>
             <li><NavLink className="about_about" exact to="/about">About</NavLink></li>
-            {/* <li><NavLink className="contact_contact" exact to="/contact">Contact</NavLink></li> */}
-            {/* <li><NavLink exact to="/post">Post</NavLink></li> */}
+            <li><NavLink className="contact_contact" exact to="/contact">Contact</NavLink></li>
+            <li><NavLink className="post_post" exact to="/post">Post</NavLink></li>
             <li><NavLink className="login_login" exact to="/login">Login</NavLink></li>
             <li><NavLink className="register_register" exact to="/register">Register</NavLink> </li>
           </ul>
