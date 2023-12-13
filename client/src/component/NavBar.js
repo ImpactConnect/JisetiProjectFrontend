@@ -1,4 +1,5 @@
 import React from 'react'
+import './NavBar.css'
 import {Link} from "react-scroll"
 import { NavLink } from "react-router-dom"
 import logo from "./images/logo.png"

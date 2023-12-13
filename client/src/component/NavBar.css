@@ -1,0 +1,34 @@
+.navbar_nav{
+    background-color: #D3CBCB;
+    
+  }
+  
+  .navbar_ul ul li{
+    text-decoration: none;
+    color: yellow;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+  
+  .navbar_ul ul li .home_home, .about_about, .contact_contact, .login_login, .register_register{
+    text-decoration: none;
+    list-style-type: none;
+   
+  }
+  
+  .navbar_links li{
+    margin: 10px;
+    /* border: 2px red solid; */
+  }
+  
+  .navbar_links{
+    display: inline-flex;
+    justify-content: flex-end;
+    
+  }
+  
+  .logo_image{
+    width: 100px;
+    height: 100px;
+    
+  }
