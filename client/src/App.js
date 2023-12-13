@@ -11,6 +11,13 @@ import RegisterForm from "./component/RegisterForm"
 
 
 function App() {
+
+  function handleFormSubmit (user) {
+    fetch('https//:blablabla')
+    .then(res => res.json())
+    .then(data => data)
+  }
+
   return (
     <div className="App">
     {/* <Home />
@@ -24,7 +31,7 @@ function App() {
           {/* <Route path="/contact" element ={<Contact/>} /> */}
           {/* <Route path="/post" element ={<Post/>} /> */}
           <Route path="/login" element ={<LoginForm/>} />
-          <Route path="/register" element ={<RegisterForm/>} />
+          <Route path="/register" element ={<RegisterForm handleFormSubmit={handleFormSubmit}/>} />
         </Routes>
         <Contact />
       </Router>
