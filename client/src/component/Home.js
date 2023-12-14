@@ -8,10 +8,6 @@ import CardPosts from "./CardPosts"
 
 function Home() {
 
-  const initialHome = {
-
-  }
-
 
   return (
     <div className="home-container">
@@ -24,7 +20,7 @@ function Home() {
         </center>
       </div>
       <div className='heading'>
-          <center><h3>All Posts</h3></center>
+          <center><h2>All Posts</h2></center>
       </div>
       <div className='render-data-container'>
         <div>

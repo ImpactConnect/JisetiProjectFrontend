@@ -36,13 +36,13 @@
 .heading {
   background-color: #D3CBCB;
   position: fixed;
-  width: 50.65%;
+  width: 51.7%;
   height: 30px;
   margin-top: 20px;
   margin-left: 380px;
   border: 1px solid #D3CBCB;
   padding-top: 7px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .render-data-container {
@@ -53,7 +53,6 @@
   margin-top: 130px;
   border: 1px solid #D3CBCB;
   padding: 20px;
-  padding-left: 0;
 }
 
 .right-container {
