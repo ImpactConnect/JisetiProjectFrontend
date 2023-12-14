@@ -10,7 +10,6 @@ function Footer() {
   return (
     <footer className="footer_container" id="contact">
         <img src={logo} alt="" className="logo_img" />
-      <center>
         <span className="footer_icons_container">
           <ul className="footer_icon">
             <li><a href="#f"><FaFacebook /></a></li>
@@ -22,7 +21,6 @@ function Footer() {
             Copyright &copy; 2017 All Rights Reserved by <a href="#h">JISETI</a>.
           </p>
         </span>
-      </center>
     </footer>
   )
 }

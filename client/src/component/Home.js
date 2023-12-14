@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/Home.css'
+
 import CardPosts from "./CardPosts"
 // import About from "./About";
 // import Contact from "./Contact";
@@ -7,12 +8,41 @@ import CardPosts from "./CardPosts"
 
 function Home() {
 
-  
+  const initialHome = {
+
+  }
 
 
   return (
-    <div className="home">
-      <div className="home_container">
+    <div className="home-container">
+      <div className='left-container'>
+        <center>
+          <h1>POSTS</h1>
+          <button className='posts-button'>All</button>
+          <button className='posts-button'>Red Flags</button>
+          <button className='posts-button'>Interventions</button>
+        </center>
+      </div>
+      <div className='heading'>
+          <center><h3>All Posts</h3></center>
+      </div>
+      <div className='render-data-container'>
+        <div>
+          <center>
+            {<CardPosts />}
+          </center>
+        </div>
+      </div>
+      <div className='right-container'>
+        <center>
+          <video className='video' src='client/src/component/images/videoplayback.mp4' type='video/mp4' controls autoPlay>
+          </video>
+          <br/><br/>
+          <video className='video' src='client/src/component/images/videoplayback.mp4' type='video/mp4' controls autoPlay>
+          </video>
+        </center>
+      </div>
+      {/* <div className="home_container">
         <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" alt="home_image" />
         <div className="home_container_text">
           <h1>Welcome to JISETI</h1>
@@ -20,7 +50,7 @@ function Home() {
           </p>
         </div>
       </div>
-    <CardPosts />     
+    <CardPosts />      */}
       
     </div>
   )

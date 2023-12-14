@@ -8,7 +8,9 @@ function NavBar() {
   return (
     <div className="navbar_container">
       <nav className="navbar_nav">
-        <div className="logo_image"> <img src={logo}alt="pic" /> </div>
+        <div className="logo_image">
+          <NavLink className="home_home" exact to="/"><img src={logo}alt="pic" /></NavLink>
+        </div>
         <div className="navbar_ul">
           <ul className="navbar_links">
             {/* <li><Link to="home" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>

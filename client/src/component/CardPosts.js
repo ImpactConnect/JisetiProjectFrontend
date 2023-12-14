@@ -1,5 +1,6 @@
 import React from 'react';
 import DPosts from "./Dummy";
+import './styles/CardPosts.css'
 
 function CardPosts() {
     const Posts = DPosts.map((post=>{
