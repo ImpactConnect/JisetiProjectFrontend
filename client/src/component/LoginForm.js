@@ -32,10 +32,10 @@ function LoginForm() {
           <ValidatorForm className="input_box">
             <TextValidator type="text" name="username" className="email_input"  label="Enter Username/Email" validators={["required"]}></TextValidator>
             <TextValidator type="password" name="password" className="pwd_input"  label="Enter Password" validators={["required"]} ></TextValidator>
-            <Button type='submit'  className="submit">Login</Button>
+            <Button type='submit'   className="submit">Login</Button>
           </ValidatorForm>
         
-        <div className="remember_forgot">
+        <div className="remember_forgot" data-testid='logindata'>
           <label htmlFor=""><input type="checkbox"/>Remember me?</label>
           <a href="#f">Forgot Password?</a>
         </div>

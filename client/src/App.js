@@ -50,11 +50,8 @@ function App() {
   }
 
   return (
-    <div className="App">
-    {/* <Home />
-         <About />
-         <Contact/> */}
-   
+    <div className="App" data-testid='app'>
+      
       
         <NavBar />
         <Routes>

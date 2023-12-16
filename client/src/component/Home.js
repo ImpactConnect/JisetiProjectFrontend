@@ -75,7 +75,7 @@ function Home({contentToRender, title, userIsLoggedIn, leftContainerButtonHandle
   )
 
   return (
-    <div className="home-container" data-testid='home-1'>
+    <div className="home-container" >
       <div className='left-container'>
         <center>
           <h1>POSTS</h1>
