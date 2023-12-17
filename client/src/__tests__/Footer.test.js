@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import Footer from '../component/Footer';
 
-test("Example 1 renders successfully", () => {
-    render(<Footer/>);
+test("Displays a text named JISETI", () => {
+    render(<Footer />);
 
     const element = screen.getByText(/JISETI/i);
 
     expect(element).toBeInTheDocument();
-})
+}) 

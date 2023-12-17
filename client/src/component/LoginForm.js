@@ -25,7 +25,7 @@ function LoginForm() {
 
 
   return (
-    <div className="login_container">
+    <div className="login_container" >
       <center>
         <h1 className="login">Login</h1>
         <div className="login_form">
@@ -36,7 +36,7 @@ function LoginForm() {
           </ValidatorForm>
         
         <div className="remember_forgot" data-testid='logindata'>
-          <label htmlFor=""><input type="checkbox"/>Remember me?</label>
+          <label htmlFor="tick"><input type="checkbox" />Remember me?</label>
           <a href="#f">Forgot Password?</a>
         </div>
        
@@ -44,6 +44,7 @@ function LoginForm() {
           <p>Don't have an account? <Link to="/register">Register</Link></p>
         </div>
         </div>
+        
       </center>
       
     </div>

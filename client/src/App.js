@@ -50,7 +50,7 @@ function App() {
   }
 
   return (
-    <div className="App" data-testid='app'>
+    <div className="App" role='parent'>
       
       
         <NavBar />
@@ -61,7 +61,7 @@ function App() {
           <Route path="/about" element ={<About/>} />
           <Route path="/contact" element ={<Contact/>} />
           <Route path="/post" element ={<Post/>} />
-          <Route path="/login" element ={<LoginForm/>} />
+          <Route path="/login" element ={<LoginForm />} />
           <Route path="/register" element ={<RegisterForm handleFormSubmit={handleFormSubmit}/>} />
         </Routes>
         <Footer />
