@@ -1,22 +1,27 @@
 import { Route, Routes} from "react-router-dom";
-import React, {useState} from "react";
-import './App.css'
+import React, {useEffect, useState} from "react";
 import Contact from "./component/Contact"
-import Home from "./component/Home"
+import UserHome from "./component/UserHome"
 import About from "./component/About"
-import NavBar from "./component/NavBar"
-import Post from "./component/Post"
-import LoginForm from "./component/LoginForm"
-import RegisterForm from "./component/RegisterForm"
+import UserLoginForm from "./component/UserLoginForm"
+import UserRegisterForm from "./component/UserRegisterForm"
 import Footer from "./component/Footer"
 import DPosts from "./component/Dummy"
+import './App.css'
 
 
 function App() {
 
-  const [contentToRender, setContentsToRender] = useState(DPosts)
+  const [contentToRender, setContentsToRender] = useState(DPosts);
   const [title, setTitle] = useState('All Posts');
-  const [userIsLoggedIn, setUserIsLoggedIn] = useState(true)
+  const [images, setImages] = useState([]);
+  const [userIsLoggedIn, setUserIsLoggedIn] = useState(true);
+
+  function handleLoginFormSubmit() {
+    fetch('https//:localhost:3000/login')
+    .then(res => res.json())
+    .then(data => setUserIsLoggedIn(true))
+  }
 
   function leftContainerButtonHandler (e) {
     const contentsToRender = DPosts
@@ -32,8 +37,8 @@ function App() {
     }
   }
 
-  function handleFormSubmit (user) {
-    fetch('https//:blablabla', {
+  function handleSignUpFormSubmit (user) {
+    fetch('https//:localhost:3000/register', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -45,31 +50,35 @@ function App() {
     .then(data => data)
   }
 
-  function handleNewPpost (newPost) {
-    console.log(newPost)
+  function handleNewPost (newPost) {
+    fetch('https//:blablabla', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify(newPost)
+    })
+    .then(res => res.json())
+    .then(data => data)
   }
+
 
   return (
     <div className="App">
-    {/* <Home />
-         <About />
-         <Contact/> */}
-   
-      
-        <NavBar />
-        <Routes>
-          <Route path="/" element ={<Home userIsLoggedIn={userIsLoggedIn}
-           handleNewPpost={handleNewPpost} contentToRender={contentToRender}
-            title={title} leftContainerButtonHandler={leftContainerButtonHandler}/>}/>
-          <Route path="/about" element ={<About/>} />
-          <Route path="/contact" element ={<Contact/>} />
-          <Route path="/post" element ={<Post/>} />
-          <Route path="/login" element ={<LoginForm/>} />
-          <Route path="/register" element ={<RegisterForm handleFormSubmit={handleFormSubmit}/>} />
-        </Routes>
-        <Footer />
-     
-   
+      <Routes>
+        <Route path="/" element ={userIsLoggedIn ? <UserHome
+         handleNewPost={handleNewPost} contentToRender={contentToRender}
+          title={title} leftContainerButtonHandler={leftContainerButtonHandler}/> :
+           <UserLoginForm handleLoginFormSubmit={handleLoginFormSubmit}/>} />
+        <Route path="/about" element ={<About/>}/>
+        <Route path="/contact" element ={<Contact/>}/>
+        <Route path="/login" element ={<UserLoginForm images={images}
+         handleLoginFormSubmit={handleLoginFormSubmit}/>}/>
+        <Route path="/register" element ={<UserRegisterForm images = {images}
+         handleSignUpFormSubmit={handleSignUpFormSubmit}/>} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
