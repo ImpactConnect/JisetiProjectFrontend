@@ -63,14 +63,32 @@ function App() {
     .then(data => data)
   }
 
+  function handleDelete () {
+    fetch('https//:blablabla', {
+      method: 'Delete',
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: null
+    })
+    .then(res => res.json())
+    .then(data => data)
+  }
+
+  function handleEdit () {
+
+  }
+
 
   return (
     <div className="App">
       <Routes>
         <Route path="/" element ={userIsLoggedIn ? <UserHome
-         handleNewPost={handleNewPost} contentToRender={contentToRender}
-          title={title} leftContainerButtonHandler={leftContainerButtonHandler}/> :
-           <UserLoginForm handleLoginFormSubmit={handleLoginFormSubmit}/>} />
+         handleDelete={handleDelete} handleEdit={handleEdit}
+          handleNewPost={handleNewPost} contentToRender={contentToRender}
+            title={title} leftContainerButtonHandler={leftContainerButtonHandler}/> :
+              <UserLoginForm handleLoginFormSubmit={handleLoginFormSubmit}/>} />
         <Route path="/about" element ={<About/>}/>
         <Route path="/contact" element ={<Contact/>}/>
         <Route path="/login" element ={<UserLoginForm images={images}

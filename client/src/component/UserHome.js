@@ -7,7 +7,7 @@ import NavBar from './NavBar';
 
 
 function UserHome({contentToRender, title, userIsLoggedIn,
-   leftContainerButtonHandler, handleNewPost}) {
+   leftContainerButtonHandler, handleNewPost, handleDelete, handleEdit}) {
 
   const [newPost, setNewPost] = useState({
     title: '',
@@ -87,7 +87,7 @@ function UserHome({contentToRender, title, userIsLoggedIn,
       <div className='render-data-container'>
         <div>
           <center>
-            {<CardPosts contentToRender={contentToRender}/>}
+            {<CardPosts contentToRender={contentToRender} handleDelete={handleDelete} handleEdit={handleEdit}/>}
           </center>
         </div>
       </div>
