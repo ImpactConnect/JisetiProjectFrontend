@@ -1,0 +1,20 @@
+.card_image{
+    display: flex;
+    width: 700px;
+    height: 400px;
+    margin-left: 85px;
+    border-radius: 10px;
+}
+
+.cardpost_container {
+    background-color: #D3CBCB;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.card_title{
+    text-align: center;
+}

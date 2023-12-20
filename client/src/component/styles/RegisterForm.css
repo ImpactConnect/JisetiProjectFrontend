@@ -1,0 +1,41 @@
+.register-form-container {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.register-form {
+    position: absolute;
+    position: fixed;
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+    margin-top: 9%;
+    margin-left: 7%;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register{
+    color: #3d3939;
+    font-size: 30px;
+    margin-left: 120px;
+}
+
+.name_input{
+    width: 326px;
+    height: 70px;
+}
+
+.reg_submit {
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 7px;
+    border-radius: 20px;
+    border: none;
+}
