@@ -1,0 +1,7 @@
+.image-slide {
+    position: absolute;
+    left: 50%;
+    width: 900px;
+    height: 100vh;
+    border-radius: 5 10 0 10;
+}

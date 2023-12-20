@@ -1,0 +1,9 @@
+.contact_container{
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.contact_container h1 a{
+    text-decoration: underline;
+    color: yellow;
+}
